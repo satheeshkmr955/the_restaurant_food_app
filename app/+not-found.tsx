@@ -1,22 +1,21 @@
+import Animated from "react-native-reanimated";
 import { Link, Stack } from "expo-router";
-
-import { Text, View } from "@/components/Themed";
 
 export default function NotFoundScreen() {
   return (
     <>
       <Stack.Screen options={{ title: "Oops!" }} />
-      <View className="flex-[1] items-center justify-center p-[20px]">
-        <Text className="text-[20px] font-bold">
+      <Animated.View className="flex-[1] items-center justify-center p-[20px]">
+        <Animated.Text className="text-[20px] font-bold">
           This screen doesn't exist.
-        </Text>
+        </Animated.Text>
 
         <Link href="/" className="mt-[15px] py-[15px]">
-          <Text className="text-[14px] !text-[#2e78b7]">
+          <Animated.Text className="text-[14px] !text-[#2e78b7]">
             Go to home screen!
-          </Text>
+          </Animated.Text>
         </Link>
-      </View>
+      </Animated.View>
     </>
   );
 }
