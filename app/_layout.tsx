@@ -60,6 +60,10 @@ function RootLayoutNav() {
           name="(home)"
           options={{ title: "BusinessSearch", headerTitleAlign: "center" }}
         />
+        <Stack.Screen
+          name="results-show"
+          options={{ title: "Results show", headerTitleAlign: "center" }}
+        />
       </Stack>
     </ThemeProvider>
   );
